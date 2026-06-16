@@ -95,3 +95,15 @@ v1=np.array([1,2,3])
 v2=np.array([4,5,6])
 print(np.vstack([v1,v2,v1,v2]))
 print(np.hstack([v1,v2,v1,v2]))
+
+
+#misc
+file_data=np.genfromtxt('data.txt',delimiter=',')
+file_data = file_data.astype('int32')
+print(file_data)
+
+
+#boolean masking and advanced indexing
+
+print(file_data > 50)
+print(file_data[file_data > 50])
